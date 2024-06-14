@@ -1,0 +1,156 @@
+.header{
+    background: url('../images/header-bg.jpg') 86% 0/cover no-repeat
+}
+
+.header-wrapper{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 271px ;
+    padding: 0 10px;
+}
+
+.header-menu{
+    flex-basis: 33.3%;
+}
+
+.header-nav{
+    display: none;
+    flex-basis: 33.3%;
+    align-items: center;
+    gap: 33px;
+}
+
+.header-nav a{
+    font-weight: 900;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-logo{
+    flex-basis: 33.3%;
+    padding-left: 6px;
+}
+
+.header-contact-numbers .number{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-contact-numbers a{
+    font-family: 'GothamPro';
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 167%;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-align: right;
+}
+
+.header-contact-numbers span{
+    display: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 167%;
+    text-align: center;
+    color: #979799;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.header-content h1.header-title__desktop{
+    display: none;
+    font-size: 64px;
+    line-height: 104%;
+    text-wrap: nowrap;
+}
+
+.header-content p{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.header-content .submit{
+    margin-bottom: 45px;
+    padding: 10px 36px;
+
+}
+
+
+@media (min-width: 962px) {
+    .header-wrapper{
+        background: #323233;
+        padding: 10px 46px 20px 36px;
+    }
+
+    .header-logo img{
+        width: 77px;
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+    .header-contact-numbers a{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 167%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .header-contact-numbers span{
+        display: block;
+    }
+
+    .header-nav{
+        display: flex;    
+        order: 2
+    }
+
+    .header-logo{
+        order: 1
+    }
+
+    .header-contact-numbers{
+        order: 3
+    }
+    
+    .header-content h1.header-title__desktop{
+        display: block;
+    }
+
+    .header-title__mobile{
+        display: none;
+    }
+
+    .header-content p{
+        font-size: 28px;
+    }
+
+    .header-content .submit{
+        font-size: 20px;
+}
+}
