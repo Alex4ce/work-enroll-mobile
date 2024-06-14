@@ -109,8 +109,16 @@
 }
 
 
+.division-positions .position-item .add-btn{
+    flex-shrink: 0;
+}
+.division-positions .position-item .job-icon{
+    flex-shrink: 0;
+}
+
 .division-positions .position-item .add-btn img{
     width: 25px;
+    height: 25px;
 }
     
 .division-positions .position-item .job{
